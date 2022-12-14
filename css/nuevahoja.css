@@ -135,7 +135,7 @@ footer {
     mix-blend-mode: overlay; }
 
 .banner-catalogo {
-  width: 100%;
+  width: 100vw;
   background-size: cover; }
 
 .contenedor-imagenes {
@@ -303,84 +303,65 @@ footer {
       padding-bottom: 5px; }
 
 .body-glasses {
-  background-color: white; }
-  .body-glasses .header-glasses {
-    background-color: white;
-    border-bottom: 1px solid black; }
-    .body-glasses .header-glasses div {
-      background-color: white;
-      align-items: center;
-      color: white;
-      width: 100%;
-      height: 50px;
-      justify-content: space-evenly;
-      color: black;
-      font-size: 1rem; }
-    .body-glasses .header-glasses .nav-text a:hover {
-      transition: all 0.5s;
-      transform: scale(1.2); }
+  background-color: white;
+  width: 100vw; }
   .body-glasses .banner-glasses {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 90vw;
     height: 90%;
     margin: auto;
     margin-top: 20px;
     border-radius: 20px; }
-  .body-glasses .catalogo-glasses {
-    display: grid;
-    grid-template-areas: "carta1 carta2 carta3 carta4" "carta5 carta6 carta7 carta8" "carta9 carta10 carta11 carta12";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: center;
-    margin-bottom: 20px; }
-    .body-glasses .catalogo-glasses .carta {
-      margin-top: 20px;
-      margin-left: 30px;
-      transition: all 0.3s; }
-      .body-glasses .catalogo-glasses .carta .texto {
-        font-family: Arial, Helvetica, sans-serif; }
-      .body-glasses .catalogo-glasses .carta .btn-color {
-        background-color: #9BB1FF;
-        color: black;
-        border: none; }
-      .body-glasses .catalogo-glasses .carta .precio {
-        font-style: italic;
-        font-weight: normal;
-        margin-right: 5px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: line-through; }
-    .body-glasses .catalogo-glasses .carta:hover {
-      cursor: pointer;
-      transform: translate(0, -10px) scale(1.05, 1.05); }
-    .body-glasses .catalogo-glasses .carta1 {
-      grid-area: carta1; }
-    .body-glasses .catalogo-glasses .carta2 {
-      grid-area: carta2; }
-    .body-glasses .catalogo-glasses .carta3 {
-      grid-area: carta3; }
-    .body-glasses .catalogo-glasses .carta4 {
-      grid-area: carta4; }
-    .body-glasses .catalogo-glasses .carta5 {
-      grid-area: carta5; }
-    .body-glasses .catalogo-glasses .carta6 {
-      grid-area: carta6; }
-    .body-glasses .catalogo-glasses .carta7 {
-      grid-area: carta7; }
-    .body-glasses .catalogo-glasses .carta9 {
-      grid-area: carta9; }
-    .body-glasses .catalogo-glasses .carta10 {
-      grid-area: carta10; }
-    .body-glasses .catalogo-glasses .carta11 {
-      grid-area: carta11; }
-    .body-glasses .catalogo-glasses .carta12 {
-      grid-area: carta12; }
+
+.header-glasses {
+  background-color: white;
+  border-bottom: 1px solid black;
+  width: 100vw; }
+  .header-glasses div {
+    background-color: white;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 50px;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 1rem; }
+  .header-glasses .nav-text a:hover {
+    transition: all 0.5s;
+    transform: scale(1.2); }
+
+.catalogo-glasses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  margin-bottom: 20px; }
+  .catalogo-glasses .carta {
+    margin-top: 20px;
+    margin-left: 30px;
+    transition: all 0.3s; }
+    .catalogo-glasses .carta .texto {
+      font-family: Arial, Helvetica, sans-serif; }
+    .catalogo-glasses .carta .btn-color {
+      background-color: #9BB1FF;
+      color: black;
+      border: none; }
+    .catalogo-glasses .carta .precio {
+      font-style: italic;
+      font-weight: normal;
+      margin-right: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: line-through; }
+  .catalogo-glasses .carta:hover {
+    cursor: pointer;
+    transform: translate(0, -10px) scale(1.05, 1.05); }
 
 .footer-glasses {
   display: grid;
   grid-template-columns: 3fr 4fr 4fr;
   grid-template-rows: 1fr;
-  width: 95%;
+  width: 95vw;
   height: 300px;
   margin-top: 35px;
   margin-bottom: 15px;
@@ -442,7 +423,8 @@ footer {
     opacity: 0; }
   .contenedor-form {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
+    grid-template-rows: 1fr 1fr;
+    width: 100vw; }
     .contenedor-form .form-contacto {
       margin-bottom: 10px; }
     .contenedor-form .nombre input {
@@ -455,13 +437,14 @@ footer {
       width: 100%; }
     .contenedor-form .direccion div input [name="cp"] {
       width: 100%; }
+  .header-glasses {
+    background-color: white;
+    width: 100vw; }
   .banner-glasses {
     width: 90vw; }
   .catalogo-glasses {
-    display: grid;
-    grid-template-areas: "carta1" "carta2" "carta3" "carta4" "carta5" "carta6" "carta7" "carta8" "carta9" "carta10" "carta11" "carta12";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
     margin: auto; }
     .catalogo-glasses div {
       margin: auto;
