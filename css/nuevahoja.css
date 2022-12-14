@@ -338,7 +338,7 @@ footer {
   justify-content: center;
   margin-bottom: 20px; }
   .catalogo-glasses .carta {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 30px;
     transition: all 0.3s; }
     .catalogo-glasses .carta .texto {
@@ -450,13 +450,16 @@ footer {
       margin: auto;
       justify-content: center;
       align-items: center; }
+    .catalogo-glasses .carta {
+      margin-top: 15px; }
   .footer-glasses {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: auto; }
+    height: auto;
+    margin-top: 20px; }
     .footer-glasses div {
       justify-content: center;
       align-items: center;
