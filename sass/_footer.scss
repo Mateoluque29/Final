@@ -1,0 +1,49 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: solid 2px white;
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    background-image: url(../multimedia/texture-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    section{
+        padding: 20px;
+        border: solid 1px white;
+        div{
+            justify-content: center;
+            text-align: center;
+            iframe{
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
+            h3{
+                font-size: 28px;
+                font-family: 'hola';
+                text-decoration: underline;
+            }
+            ul li{
+                font-size: 20px;
+                line-height: 1.6;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+            ul li:hover{
+                text-decoration: underline;
+                transition: all 0.3s;
+                transform: scale(1.1);
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
